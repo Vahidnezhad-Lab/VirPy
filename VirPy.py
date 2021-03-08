@@ -153,6 +153,7 @@ def main():
 
     def getTopVirus():
         virus = []
+        os.system('mkdir ' + out + '/featurecounts')
         missingAnnot = open(out + '/featurecounts/missingAnnots.txt', 'w')
         topList = open(out + '/viruses_detected.txt', 'w')
         reader = csv.reader(open(out + "/eXpress/results.xprs"), delimiter="\t")
@@ -167,7 +168,7 @@ def main():
                 topList.write('\n')
 
         print("Quantifying Viral Features using featureCounts")
-        os.system('mkdir ' + out + '/featurecounts')
+
         for v in virus:
             if os.path.isfile(index_vir + "/annotationFiles/" + v + ".gtf"):
                 cmd8 = 'featurecounts -p -a ' + index_vir + '/annotationFiles/' + v + '.gtf ' + '-o ' + out + '/featureCounts/' + v + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
