@@ -3,8 +3,11 @@ ViriPy is an all-in-one workflow for the detection, quantification, and visualiz
 
 ## Dependencies
 
+Quality check and read trimming
 * FASTQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic)
+
+Third-party software used in ViriPy
 * STAR (https://github.com/alexdobin/STAR)
 * HISAT2 (http://daehwankimlab.github.io/hisat2/)
 * samtools (http://samtools.sourceforge.net/)
