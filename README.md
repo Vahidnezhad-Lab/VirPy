@@ -1,4 +1,5 @@
 # ViriPy
+ViriPy is an all-in-one workflow for the detection, quantification, and visualization of viral species from RNA-seq data acquired from clinical samples. The objective of ViriPy is to provide an accessible and easy-to-use bioinformatics tool for investigation of viruses in clinically-derived RNA-seq data.
 
 ## Dependencies
 
