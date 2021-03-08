@@ -43,7 +43,7 @@ Optional
 * -t N_THREAD, --n_thread N_THREAD
 	- Number of threads, default 4
 * -gzip True/False, --gzip True/False
-	- Toggle -g 'True' for using gunzipped FASTQ input
+	- Toggle '-g True' for using gunzipped FASTQ input, default: False
 
 ## Example Usage
 ```
