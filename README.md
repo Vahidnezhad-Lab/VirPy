@@ -58,4 +58,4 @@ python ViriFy.py -t 8 -1 Test1.fastq -2 Test2.fastq -o outputDir -index human_re
 * eXpress/results.xprs
 	- Tab-delimited file with viral abundance quantification
 * featureCounts/virus_counts.txt
-	- Tect file for each virus detected with viral feature quantification
+	- Text file for each virus detected with viral feature quantification
