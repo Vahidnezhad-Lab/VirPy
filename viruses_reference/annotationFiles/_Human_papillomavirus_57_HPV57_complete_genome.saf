@@ -1,0 +1,8 @@
+GeneID	Chr	Start	END	Strand
+E6	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	105	566	+
+E7	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	527	805	+
+E1	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	810	2741	+
+E2	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	2683	3834	+
+E4	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	3221	3595	+
+L2	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	4373	5770	+
+L1	gi|60882|lcl|HPV57REF.1|_Human_papillomavirus_57_HPV57_complete_genome	5703	7235	+

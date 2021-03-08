@@ -1,0 +1,7 @@
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	102	524	.	+	0	gene_id "E6"; transcript_id "1.0";
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	521	823	.	+	0	gene_id "E7"; transcript_id "2.0";
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	813	2612	.	+	0	gene_id "E1"; transcript_id "3.0";
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	2554	3762	.	+	0	gene_id "E2"; transcript_id "4.0";
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	2981	3526	.	+	0	gene_id "E4"; transcript_id "5.0";
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	3764	5329	.	+	0	gene_id "L2"; transcript_id "6.0";
+gi|396918|lcl|HPV14REF.1|_Human_papillomavirus_14_HPV14_complete_genome	RefSeq	exon	5345	6895	.	+	0	gene_id "L1"; transcript_id "7.0";
