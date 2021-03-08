@@ -21,6 +21,9 @@ git clone https://github.com/Vahidnezhad-Lab/ViriPy.git
 cd ViriPy
 ```
 ## Building STAR Human Genome Index Files
+Human genome aseembly can be obtained from: http://hgdownload.soe.ucsc.edu/downloads.html
+
+To build STAR genome index:
 ```
 star --runMode genomeGenerate --runThreadN NumberOfThreads --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta
 ```
