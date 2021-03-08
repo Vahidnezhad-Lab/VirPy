@@ -32,9 +32,9 @@ Required
 	- Path to Read 2 of the paired-end RNA-seq
 * -o outputDir, --out outputDir	
 	- Path to the output directory
-* -index human_references, --index_dir human_references
+* -index human_reference, --index_dir human_reference
 	- Path to directory containing index files for human genome
-* -index_vir virus_references, --index_vir virus_references
+* -index_vir virus_reference, --index_vir virus_reference
 	- Path to directory containing index files and fasta for virus genomes
 
 Optional
