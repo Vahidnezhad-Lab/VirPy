@@ -13,7 +13,7 @@
 
 ## Installation
 ```
-git clone {GITHUB}
+git clone https://github.com/Vahidnezhad-Lab/ViriPy.git
 cd ViriPy
 ```
 ## Building STAR Human Genome Index Files
