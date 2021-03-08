@@ -11,7 +11,7 @@ import os.path
 import csv
 from operator import itemgetter
 
-prog = "VirFy.py"
+prog = "VirPy.py"
 
 version = """%prog
 ViriPy is free for non-commercial use without warranty.
