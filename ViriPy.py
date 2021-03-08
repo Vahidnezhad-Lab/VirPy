@@ -37,10 +37,10 @@ def main():
     parser.add_argument('-o', '--out', required=True, metavar='outputDir', type=str,
                         help='Path to the output directory')
 
-    parser.add_argument('-index', '--index_dir', required=True, metavar='human_references', type=str,
+    parser.add_argument('-index', '--index_dir', required=True, metavar='human_reference', type=str,
                         help='Path to directory containing index files for human genome')
 
-    parser.add_argument('-index_vir', '--index_vir', required=True, metavar='virus_references', type=str,
+    parser.add_argument('-index_vir', '--index_vir', required=True, metavar='virus_reference', type=str,
                         help='Path to directory containing index files and fasta for virus genomes')
 
     parser.add_argument('-g', '--gzip', required=False,
