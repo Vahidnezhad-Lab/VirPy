@@ -14,7 +14,7 @@ from operator import itemgetter
 prog = "VirPy.py"
 
 version = """%prog
-ViriPy is free for non-commercial use without warranty.
+VirPy is free for non-commercial use without warranty.
 ============================================================================
 """
 
@@ -23,7 +23,7 @@ usage = """Usage: %prog[-h] -1 Read1.fastq -2 Read2.fastq -o outputDir -index hu
 
 
 def main():
-    parser = argparse.ArgumentParser(description='ViriPy: An All-In-One Workflow for Virus Detection, Quantification, and Visualization')
+    parser = argparse.ArgumentParser(description='VirPy: An All-In-One Workflow for Virus Detection, Quantification, and Visualization')
 
     parser.add_argument('-t', '--n_thread', required=False, default='4',
                         type=str, help='Number of threads')
@@ -183,7 +183,7 @@ def main():
         topList.close()
 
     getTopVirus()
-    print("Outputs are stored in " + out + ". Thank you for using ViriPy!")
+    print("Outputs are stored in " + out + ". Thank you for using VirPy!")
 
 if __name__ == '__main__':
     main()
