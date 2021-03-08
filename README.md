@@ -47,7 +47,7 @@ Optional
 
 ## Example Usage
 ```
-python ViriFy.py -t 8 -1 Test1.fastq -2 Test2.fastq -o outputDir -index human_reference/ -index_vir viruses_reference/ --gzip True
+python ViriFy.py -t 4 -1 Test.1.fastq -2 Test.2.fastq -o outputDir -index human_reference/ -index_vir viruses_reference/
 ```
 
 ## Output
