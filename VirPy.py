@@ -200,7 +200,7 @@ def main():
             i = v.split("|")[-1]
 
             cmd9 = "samtools view -b " + out + "/unmapped_aln_Coord_sorted.bam '" + v + "' > " + out + "/virus_bams/" + i + ".bam"
-            cmd10 = 'samtools mpileup ' + out + '/virus_bams/' + i + '.bam | ivar variants -p ' + out + '/VariantCalling/' + i + ' -r ' + index_vir + '/viruses.fasta -g ' + index_vir + 'x/annotationFiles/' + i + '.gff3'
+            cmd10 = 'samtools mpileup ' + out + '/virus_bams/' + i + '.bam | ivar variants -p ' + out + '/VariantCalling/' + i + ' -r ' + index_vir + '/viruses.fasta -g ' + index_vir + '/annotationFiles/' + i + '.gff3'
             os.system(cmd9)
             os.system(cmd10)
             cmd11 = 'python ivar_variants_to_vcf.py ' + out + '/VariantCalling/' + i + '.tsv ' + out + '/VariantCalling/' + i + '.vcf'
