@@ -10,6 +10,7 @@ import os
 import os.path
 import csv
 from operator import itemgetter
+import ivar_variants_to_vcf
 
 prog = "VirPy.py"
 
@@ -104,7 +105,7 @@ def main():
     print("Aligning to virus reference using HISAT2")
 
     def virus_alignment():
-        cmd2 = 'hisat2 -x ' + index_vir + '/virus -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet'
+        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet'
         print('Running ', cmd2)
         os.system(cmd2)
 
@@ -151,8 +152,10 @@ def main():
 
     print("Getting Top Viruses")
 
+    virus = []
+    vir = []
+
     def getTopVirus():
-        virus = []
         os.system('mkdir ' + out + '/featurecounts')
         missingAnnot = open(out + '/featurecounts/missingAnnots.txt', 'w')
         topList = open(out + '/viruses_detected.txt', 'w')
@@ -163,7 +166,7 @@ def main():
 
         for l in sorted(reader, key=itemgetter(5), reverse=True):
             if int(float(l[5])) > 50:
-                post = l[1].split("|")[-1]
+                post = l[1]
                 virus.append(post)
                 topList.write('\t'.join(l))
                 topList.write('\n')
@@ -171,20 +174,40 @@ def main():
         print("Quantifying Viral Features using featureCounts")
 
         for v in virus:
-            if os.path.isfile(index_vir + "/annotationFiles/" + v + ".gtf"):
-                cmd8 = 'featurecounts -p -a ' + index_vir + '/annotationFiles/' + v + '.gtf ' + '-o ' + out + '/featureCounts/' + v + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+            i = v.split("|")[-1]
+            if os.path.isfile(index_vir + "/annotationFiles/" + i + ".gtf"):
+                cmd8 = 'featurecounts -p -a ' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
                 os.system(cmd8)
-            elif os.path.isfile(index_vir + "/annotationFiles/" + v + ".saf"):
-                cmd8 = 'featurecounts -p -F SAF -a ' + index_vir + '/annotationFiles/' + v + '.saf ' + '-o ' + out + '/featureCounts/' + v + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                vir.append(v)
+            elif os.path.isfile(index_vir + "/annotationFiles/" + i + ".saf"):
+                cmd8 = 'featurecounts -p -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
                 os.system(cmd8)
+                vir.append(v)
             else:
-                print('> There was no gene annotation file (.gtf/.saf) found for ' + v)
-                missingAnnot.write('> There was no gene annotation file (.gtf/.saf) found for ' + v)
+                print('> There was no gene annotation file (.gtf/.saf) found for ' + i)
+                missingAnnot.write('> There was no gene annotation file (.gtf/.saf) found for ' + i)
                 missingAnnot.write('\n')
+
         missingAnnot.close()
         topList.close()
 
     getTopVirus()
+
+    def call_variants():
+        os.system('mkdir ' + out + '/VariantCalling')
+        os.system('mkdir ' + out + '/virus_bams')
+        for v in vir:
+            i = v.split("|")[-1]
+
+            cmd9 = "samtools view -b " + out + "/unmapped_aln_Coord_sorted.bam '" + v + "' > " + out + "/virus_bams/" + i + ".bam"
+            cmd10 = 'samtools mpileup ' + out + '/virus_bams/' + i + '.bam | ivar variants -p ' + out + '/VariantCalling/' + i + ' -r viruses_reference/viruses.fasta -g viruses_reference/annotationFiles/' + i + '.gff3'
+            os.system(cmd9)
+            os.system(cmd10)
+            cmd11 = 'python ivar_variants_to_vcf.py ' + out + '/VariantCalling/' + i + '.tsv ' + out + '/VariantCalling/' + i + '.vcf'
+            os.system(cmd11)
+
+    call_variants()
+
     print("Outputs are stored in " + out + ". Thank you for using VirPy!")
 
 if __name__ == '__main__':
