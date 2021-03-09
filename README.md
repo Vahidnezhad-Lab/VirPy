@@ -51,6 +51,7 @@ Optional
 
 ## Example Usage
 ```
+ulimit -n 2048
 python VirPy.py -t 4 -1 Test.1.fastq -2 Test.2.fastq -o outputDir -index human_reference/ -index_vir viruses_reference/
 ```
 
