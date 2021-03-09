@@ -159,6 +159,7 @@ def main():
         reader = csv.reader(open(out + "/eXpress/results.xprs"), delimiter="\t")
 
         topList.write('\t'.join(next(reader)))
+        topList.write('\n')
 
         for l in sorted(reader, key=itemgetter(5), reverse=True):
             if int(float(l[5])) > 50:
