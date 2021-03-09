@@ -13,6 +13,7 @@ Third-party software used in ViriPy
 * samtools (http://samtools.sourceforge.net/)
 * eXpress (https://pachterlab.github.io/eXpress/index.html)
 * Subread (http://subread.sourceforge.net/)
+* iVar (https://andersen-lab.github.io/ivar/html/index.html)
 * IGV (http://software.broadinstitute.org/software/igv/)
 
 ## Installation
@@ -21,7 +22,7 @@ git clone https://github.com/Vahidnezhad-Lab/ViriPy.git
 cd ViriPy
 ```
 ## Building STAR Human Genome Index Files
-Human genome aseembly can be obtained from: http://hgdownload.soe.ucsc.edu/downloads.html
+Human genome assembly can be obtained from: http://hgdownload.soe.ucsc.edu/downloads.html
 
 To build STAR genome index:
 ```
@@ -62,3 +63,5 @@ python VirPy.py -t 4 -1 Test.1.fastq -2 Test.2.fastq -o outputDir -index human_r
 	- Tab-delimited file with viral abundance quantification
 * featureCounts/virus_counts.txt
 	- Text file for each virus detected with viral feature quantification
+* VariantCalling directory
+	- Variant calling *.vcf and *.tsv files
