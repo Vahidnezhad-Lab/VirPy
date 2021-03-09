@@ -1,5 +1,5 @@
 # VirPy
-VirPy is an all-in-one workflow for the detection, quantification, and visualization of viral species from RNA-seq data acquired from clinical samples. The objective of ViriPy is to provide an accessible and easy-to-use bioinformatics tool for investigation of viruses in clinically-derived RNA-seq data.
+VirPy is an all-in-one workflow for the detection, quantification, and visualization of viral species from RNA-seq data acquired from clinical samples. The objective of VirPy is to provide an accessible and easy-to-use bioinformatics tool for investigation of viruses in clinically-derived RNA-seq data.
 
 ## Dependencies
 
@@ -7,7 +7,7 @@ Quality check and read trimming
 * FASTQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic)
 
-Third-party software used in ViriPy
+Third-party software used in VirPy
 * STAR (https://github.com/alexdobin/STAR)
 * HISAT2 (http://daehwankimlab.github.io/hisat2/)
 * samtools (http://samtools.sourceforge.net/)
@@ -18,8 +18,8 @@ Third-party software used in ViriPy
 
 ## Installation
 ```
-git clone https://github.com/Vahidnezhad-Lab/ViriPy.git
-cd ViriPy
+git clone https://github.com/Vahidnezhad-Lab/VirPy.git
+cd VirPy
 ```
 ## Building STAR Human Genome Index Files
 Human genome assembly can be obtained from: http://hgdownload.soe.ucsc.edu/downloads.html
