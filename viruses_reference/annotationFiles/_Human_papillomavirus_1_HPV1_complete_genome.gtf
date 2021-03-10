@@ -1,0 +1,7 @@
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	104	526	.	+	0	gene_id "E6"; transcript_id "E6";
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	165	356	.	+	0	gene_id "E8"; transcript_id "E8";
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	529	810	.	+	0	gene_id "E7"; transcript_id "E7";
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	812	2650	.	+	0	gene_id "4"; transcript_id "4.0";
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	2637	3797	.	+	0	gene_id "5"; transcript_id "5.0";
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	3897	5420	.	+	0	gene_id "L2"; transcript_id "L2";
+gi|60966|lcl|HPV1REF.1|_Human_papillomavirus_1_HPV1_complete_genome	RefSeq	CDS	5413	6939	.	+	0	gene_id "L1"; transcript_id "L1";

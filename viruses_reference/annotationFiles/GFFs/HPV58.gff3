@@ -1,0 +1,13 @@
+##gff-version 3
+##sequence-region gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome 1 7824
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=10598
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	region	1	7824	.	+	.	ID=gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome:1..7824;Dbxref=taxon:10598;Is_circular=true;gbkey=Src;isolate=patient specimen GN479;mol_type=genomic DNA;note=HPV58;old-name=Human papillomavirus type 58
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	TATA_box	72	77	.	+	.	ID=id-gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome:72..77;gbkey=regulatory;regulatory_class=TATA_box
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	110	559	.	+	0	ID=gene-BAA31845.1-E6;Dbxref=NCBI_GP:BAA31845.1;Name=BAA31845.1;Note=open reading frame E6;gbkey=gene;product=BAA31845.1;protein_id=BAA31845.1
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	574	870	.	+	0	ID=gene-BAA31846.1-E7;Dbxref=NCBI_GP:BAA31846.1;Name=BAA31846.1;Note=open reading frame E7;gbkey=gene;product=BAA31846.1;protein_id=BAA31846.1
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	883	2817	.	+	0	ID=gene-BAA31847.1-E1;Dbxref=NCBI_GP:BAA31847.1;Name=BAA31847.1;Note=open reading frame E1;gbkey=gene;product=BAA31847.1;protein_id=BAA31847.1
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	2753	3829	.	+	0	ID=gene-BAA31848.1-E2;Dbxref=NCBI_GP:BAA31848.1;Name=BAA31848.1;Note=open reading frame E2;gbkey=gene;product=BAA31848.1;protein_id=BAA31848.1
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	3330	3605	.	+	0	ID=gene-BAA14396.1-E4;Dbxref=NCBI_GP:BAA14396.1;Name=BAA14396.1;Note=no ATG start codon~open reading frame E4;gbkey=gene;partial=true;product=BAA14396.1;protein_id=BAA14396.1;start_range=.,3330
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	3892	4122	.	+	0	ID=gene-BAA31849.1-E5;Dbxref=NCBI_GP:BAA31849.1;Name=BAA31849.1;Note=open reading frame E5;gbkey=gene;product=BAA31849.1;protein_id=BAA31849.1
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	4244	5662	.	+	0	ID=gene-BAA31850.1-L2;Dbxref=NCBI_GP:BAA31850.1;Name=BAA31850.1;Note=open reading frame L2;gbkey=gene;product=BAA31850.1;protein_id=BAA31850.1
+gi|222386|lcl|HPV58REF.1|_Human_papillomavirus_58_HPV58_complete_genome	DDBJ	gene	5565	7139	.	+	0	ID=gene-BAA31851.1-L1;Dbxref=NCBI_GP:BAA31851.1;Name=BAA31851.1;Note=open reading frame L1;gbkey=gene;product=BAA31851.1;protein_id=BAA31851.1

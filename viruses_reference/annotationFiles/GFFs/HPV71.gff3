@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome 1 8017
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=120686
+gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome	RefSeq	region	1	8017	.	+	.	ID=gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome:1..8017;Dbxref=taxon:120686;Is_circular=true;gbkey=Src;genome=genomic;mol_type=genomic DNA;old-name=Human papillomavirus type 71
+gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome	RefSeq	sequence_feature	1	8017	.	+	.	ID=id-gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome:1..8017;Note=whole genome of human papillomavirus type 71;gbkey=misc_feature
+gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome	RefSeq	gene	834	2762	.	+	.	ID=gene-D1R35_gp1-E1;Dbxref=GeneID:918588;Name=E1;gbkey=Gene;gene=E1;gene_biotype=protein_coding;locus_tag=D1R35_gp1
+gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome	RefSeq	CDS	834	2762	.	+	0	ID=cds-NP_073548.1;Parent=gene-D1R35_gp1-E1;Dbxref=Genbank:NP_073548.1,GeneID:918588;Name=NP_073548.1;gbkey=CDS;gene=E1;locus_tag=D1R35_gp1;product=hypothetical protein;protein_id=NP_073548.1
+

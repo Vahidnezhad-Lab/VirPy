@@ -158,7 +158,7 @@ def main():
 
     virus = []
     vir = []
-
+    
     def getTopVirus():
         os.system('mkdir ' + out + '/featurecounts')
         missingAnnot = open(out + '/featurecounts/missingAnnots.txt', 'w')

@@ -1,0 +1,9 @@
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	102	554	.	+	0	gene_id "1"; transcript_id "1.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	530	826	.	+	0	gene_id "2"; transcript_id "2.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	832	2781	.	+	0	gene_id "3"; transcript_id "3.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	2723	3826	.	+	0	gene_id "4"; transcript_id "4.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	3255	3581	.	+	0	gene_id "5"; transcript_id "5.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	3871	4146	.	+	0	gene_id "6"; transcript_id "6.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	4146	4370	.	+	0	gene_id "7"; transcript_id "7.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	4417	5784	.	+	0	gene_id "8"; transcript_id "8.0";
+gi|333026|lcl|HPV11REF.1|_Human_papillomavirus_11_HPV11_complete_genome	EMBL	CDS	5771	7276	.	+	0	gene_id "9"; transcript_id "9.0";
