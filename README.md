@@ -13,7 +13,6 @@ Third-party software used in VirPy
 * samtools (http://samtools.sourceforge.net/)
 * eXpress (https://pachterlab.github.io/eXpress/index.html)
 * Subread (http://subread.sourceforge.net/)
-* iVar (https://andersen-lab.github.io/ivar/html/index.html)
 * IGV (http://software.broadinstitute.org/software/igv/)
 
 ## Installation
@@ -65,4 +64,3 @@ python VirPy.py -t 4 -1 Test.1.fastq -2 Test.2.fastq -o outputDir -index human_r
 * featureCounts/virus_counts.txt
 	- Text file for each virus detected with viral feature quantification
 * VariantCalling directory
-	- Variant calling *.vcf and *.tsv files
