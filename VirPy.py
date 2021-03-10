@@ -44,6 +44,9 @@ def main():
     parser.add_argument('-index_vir', '--index_vir', required=True, metavar='virus_reference', type=str,
                         help='Path to directory containing index files and fasta for virus genomes')
 
+    parser.add_argument('-c', '--min_coverage', required=False, metavar='min_coverage', default='12', type=str,
+                        help='Minimum read coverage')
+
     parser.add_argument('-g', '--gzip', required=False,
                         metavar='True/False', default='False', type=str,
                         help="""Toggle "-g 'True'" for using gunzipped FASTQ input""")
@@ -83,6 +86,7 @@ def main():
     out = os.path.abspath(args.out)
     n_thread = args.n_thread
     gzip = args.gzip
+    min_coverage = args.min_coverage
 
     os.system('ulimit -n 2048')
 
@@ -198,14 +202,12 @@ def main():
         os.system('mkdir ' + out + '/virus_bams')
         for v in vir:
             i = v.split("|")[-1]
+            os.system('mkdir ' + out + '/VariantCalling/' + i)
 
-            cmd9 = "samtools view -b " + out + "/unmapped_aln_Coord_sorted.bam '" + v + "' > " + out + "/virus_bams/" + i + ".bam"
-            cmd10 = 'samtools mpileup ' + out + '/virus_bams/' + i + '.bam | ivar variants -p ' + out + '/VariantCalling/' + i + ' -r ' + index_vir + '/viruses.fasta -g ' + index_vir + '/annotationFiles/' + i + '.gff3'
+            cmd9 = 'freebayes -f ' + index_vir + '/viruses.fasta -b ' + out + '/unmapped_aln_Coord_sorted.bam --min-coverage ' + min_coverage + ' > ' + out + '/VariantCalling/variants.vcf'
             os.system(cmd9)
+            cmd10 = 'java -jar snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
             os.system(cmd10)
-            cmd11 = 'python ivar_variants_to_vcf.py ' + out + '/VariantCalling/' + i + '.tsv ' + out + '/VariantCalling/' + i + '.vcf'
-            os.system(cmd11)
-
     call_variants()
 
     print("Outputs are stored in " + out + ". Thank you for using VirPy!")
