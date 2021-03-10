@@ -19,7 +19,7 @@ VirPy is free for non-commercial use without warranty.
 """
 
 usage = """Usage: %prog[-h] -1 Read1.fastq -2 Read2.fastq -o outputDir -index human_reference -index_vir
-                  virus_reference [-t # threads, default: 4] [-g Using gzip input files, default: False]"""
+                  virus_reference [-t # threads, default: 4] [-g Using gzip input files, default: False] [-c Minimum coverage, default: 12]"""
 
 
 def main():
@@ -88,7 +88,7 @@ def main():
     min_coverage = args.min_coverage
 
     os.system('ulimit -n 2048')
-    
+
     print("Aligning to human reference using STAR")
 
     def alignment():
