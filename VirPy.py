@@ -88,7 +88,7 @@ def main():
     min_coverage = args.min_coverage
 
     os.system('ulimit -n 2048')
-    """
+    
     print("Aligning to human reference using STAR")
 
     def alignment():
@@ -152,7 +152,7 @@ def main():
         os.system(cmd7)
 
     express()
-    """
+
     print("Getting Top Viruses")
 
     virus = []
