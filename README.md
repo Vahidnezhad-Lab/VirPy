@@ -13,6 +13,8 @@ Third-party software used in VirPy
 * samtools (http://samtools.sourceforge.net/)
 * eXpress (https://pachterlab.github.io/eXpress/index.html)
 * Subread (http://subread.sourceforge.net/)
+* Freebayes (https://github.com/freebayes/freebayes)
+* SnpEff (https://pcingola.github.io/SnpEff/)
 * IGV (http://software.broadinstitute.org/software/igv/)
 
 ## Installation
@@ -47,6 +49,8 @@ Optional
 	- Number of threads, default 4
 * -g True/False, --gzip True/False
 	- Toggle '-g True' for using gunzipped FASTQ input, default: False
+* -c MIN_COVERAGE, --min_coverage MIN_COVERAGE
+	- Minimum read coverage, default 12
 
 ## Example Usage
 ```
