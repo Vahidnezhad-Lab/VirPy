@@ -10,7 +10,6 @@ import os
 import os.path
 import csv
 from operator import itemgetter
-import ivar_variants_to_vcf
 
 prog = "VirPy.py"
 
@@ -89,7 +88,7 @@ def main():
     min_coverage = args.min_coverage
 
     os.system('ulimit -n 2048')
-
+    """
     print("Aligning to human reference using STAR")
 
     def alignment():
@@ -153,12 +152,12 @@ def main():
         os.system(cmd7)
 
     express()
-
+    """
     print("Getting Top Viruses")
 
     virus = []
     vir = []
-    
+
     def getTopVirus():
         os.system('mkdir ' + out + '/featurecounts')
         missingAnnot = open(out + '/featurecounts/missingAnnots.txt', 'w')
@@ -199,15 +198,14 @@ def main():
 
     def call_variants():
         os.system('mkdir ' + out + '/VariantCalling')
-        os.system('mkdir ' + out + '/virus_bams')
-        for v in vir:
-            i = v.split("|")[-1]
-            os.system('mkdir ' + out + '/VariantCalling/' + i)
-
-            cmd9 = 'freebayes -f ' + index_vir + '/viruses.fasta -b ' + out + '/unmapped_aln_Coord_sorted.bam --min-coverage ' + min_coverage + ' > ' + out + '/VariantCalling/variants.vcf'
-            os.system(cmd9)
-            cmd10 = 'java -jar snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
-            os.system(cmd10)
+        cmd9 = 'freebayes -f ' + index_vir + '/viruses.fasta -b ' + out + '/unmapped_aln_Coord_sorted.bam --min-coverage ' + min_coverage + ' > ' + out + '/VariantCalling/variants.vcf'
+        print('Running ', cmd9)
+        os.system(cmd9)
+        cmd10 = 'java -jar snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
+        print('Running ', cmd10)
+        os.system(cmd10)
+        os.system('mv snpEff_genes.txt ' + out + '/VariantCalling')
+        os.system('mv snpEff_summary.html ' + out + '/VariantCalling')
     call_variants()
 
     print("Outputs are stored in " + out + ". Thank you for using VirPy!")
