@@ -444,6 +444,32 @@ gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome	RefSeq
 gi|12084981|lcl|HPV71REF.1|_Human_papillomavirus_71_HPV71_complete_genome	RefSeq	CDS	834	2762	.	+	0	ID=cds-NP_073548.1;Parent=gene-D1R35_gp1-E1;Dbxref=Genbank:NP_073548.1,GeneID:918588;Name=NP_073548.1;gbkey=CDS;gene=E1;locus_tag=D1R35_gp1;product=hypothetical protein;protein_id=NP_073548.1
 
 ##gff-version 3
+##sequence-region   gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome 136 5834
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	gene	572	961	.	+	.	ID=gene1;gene_id=E7
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	mRNA	572	961	.	+	.	ID=mRNA1;Parent=gene1;transcript_id=E7;gene_id=E7
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	EMBL	exon	572	961	.	+	0	Parent=mRNA1;gene_id=E7;transcript_id=E7
+###
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	gene	136	660	.	+	.	ID=gene2;gene_id=E6
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	mRNA	136	660	.	+	.	ID=mRNA2;Parent=gene2;transcript_id=E6;gene_id=E6
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	EMBL	exon	136	660	.	+	0	Parent=mRNA2;gene_id=E6;transcript_id=E6
+###
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	gene	3266	3952	.	+	.	ID=gene3;gene_id=E4
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	mRNA	3266	3952	.	+	.	ID=mRNA3;Parent=gene3;transcript_id=E4;gene_id=E4
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	EMBL	exon	3266	3952	.	+	0	Parent=mRNA3;gene_id=E4;transcript_id=E4
+###
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	gene	2680	4197	.	+	.	ID=gene4;gene_id=E2
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	mRNA	2680	4197	.	+	.	ID=mRNA4;Parent=gene4;transcript_id=E2;gene_id=E2
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	EMBL	exon	2680	4197	.	+	0	Parent=mRNA4;gene_id=E2;transcript_id=E2
+###
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	gene	783	2759	.	+	.	ID=gene5;gene_id=E1
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	mRNA	783	2759	.	+	.	ID=mRNA5;Parent=gene5;transcript_id=E1;gene_id=E1
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	EMBL	exon	783	2759	.	+	0	Parent=mRNA5;gene_id=E1;transcript_id=E1
+###
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	gene	4269	5834	.	+	.	ID=gene6;gene_id=L2
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	.	mRNA	4269	5834	.	+	.	ID=mRNA6;Parent=gene6;transcript_id=L2;gene_id=L2
+gi|333074|lcl|HPV8REF.1|_Human_papillomavirus_8_HPV8_complete_genome	EMBL	exon	4269	5834	.	+	0	Parent=mRNA6;gene_id=L2;transcript_id=L2
+###
+##gff-version 3
 ##sequence-region gi|9627396|lcl|HPV9REF.1|_Human_papillomavirus_9_HPV9_complete_genome 1 7434
 ##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=10621
 gi|9627396|lcl|HPV9REF.1|_Human_papillomavirus_9_HPV9_complete_genome	RefSeq	region	1	7434	.	+	.	ID=gi|9627396|lcl|HPV9REF.1|_Human_papillomavirus_9_HPV9_complete_genome:1..7434;Dbxref=taxon:10621;clone=insert in BamHI site of pBR322;gbkey=Src;genome=genomic;mol_type=genomic DNA
