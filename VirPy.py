@@ -48,7 +48,11 @@ def main():
 
     parser.add_argument('-g', '--gzip', required=False,
                         metavar='True/False', default='False', type=str,
-                        help="""Toggle "-g 'True'" for using gunzipped FASTQ input""")
+                        help="""Toggle "-g True" for using gunzipped FASTQ input""")
+
+    parser.add_argument('-s', '--consensus', required=False,
+                        metavar='True/False', default='False', type=str,
+                        help="""Toggle "-s True" to generate consensus fasta file""")
 
     args = parser.parse_args()
 
@@ -86,6 +90,7 @@ def main():
     n_thread = args.n_thread
     gzip = args.gzip
     min_coverage = args.min_coverage
+    consensus = args.consensus
 
     os.system('ulimit -n 2048')
 
@@ -207,6 +212,16 @@ def main():
         os.system('mv snpEff_genes.txt ' + out + '/VariantCalling')
         os.system('mv snpEff_summary.html ' + out + '/VariantCalling')
     call_variants()
+
+    def consensus():
+        cmd11 = './gatk IndexFeatureFile ' + out + '/VariantCalling/variants.ann.vcf'
+        cmd12 = './gatk FastaAlternateReferenceMaker -R ' + index_vir + '/viruses.fasta -O ' + out + '/VariantCalling/consensus.fasta -V ' + out + '/VariantCalling/variants.ann.vcf'
+        print('Running ', cmd11)
+        os.system(cmd11)
+        print('Running ', cmd12)
+        os.system(cmd12)
+    if consensus == 'True':
+        consensus()
 
     print("Outputs are stored in " + out + ". Thank you for using VirPy!")
 
