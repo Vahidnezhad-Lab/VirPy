@@ -48,11 +48,13 @@ Optional
 * -h, --help
 	- Show this help message
 * -t N_THREAD, --n_thread N_THREAD
-	- Number of threads, default 4
+	- Number of threads, default: 4
 * -g True/False, --gzip True/False
 	- Toggle '-g True' for using gunzipped FASTQ input, default: False
 * -c MIN_COVERAGE, --min_coverage MIN_COVERAGE
-	- Minimum read coverage, default 12
+	- Minimum read coverage, default: 12
+* -s True/False, --consensus True/False
+	- Toggle '-s True' to generate consensus sequence from VCF file, default: False
 
 ## Example Usage
 ```
