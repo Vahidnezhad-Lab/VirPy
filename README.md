@@ -15,6 +15,8 @@ Third-party software used in VirPy
 * Subread (http://subread.sourceforge.net/)
 * Freebayes (https://github.com/freebayes/freebayes)
 * SnpEff (https://pcingola.github.io/SnpEff/)
+* GATK (https://gatk.broadinstitute.org/hc/en-us)
+* Picard (https://broadinstitute.github.io/picard/)
 * IGV (http://software.broadinstitute.org/software/igv/)
 
 ## Installation
