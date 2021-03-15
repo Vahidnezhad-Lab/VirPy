@@ -19,6 +19,15 @@ Third-party software used in VirPy
 * Picard (https://broadinstitute.github.io/picard/)
 * IGV (http://software.broadinstitute.org/software/igv/)
 
+Packages can be installed using [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+```
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+conda install -y fastqc trimmomatic star hisat2 samtools subread freebayes
+```
+
 ## Installation
 ```
 git clone https://github.com/Vahidnezhad-Lab/VirPy.git
