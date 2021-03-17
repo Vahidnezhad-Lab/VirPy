@@ -11,7 +11,7 @@ import os.path
 import csv
 from operator import itemgetter
 
-prog = "VirPy.py"
+prog = "VirPy_v2.py"
 
 version = """%prog
 VirPy is free for non-commercial use without warranty.
@@ -99,9 +99,9 @@ def main():
     def alignment():
         #cmd1='hisat2 -x '+index_dir+' -1 '+fq1+' -2'+fq2+' -S '+out+'/accepted_hits.sam -p '+n_thread+' --quiet'
         if gzip == "False":
-            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/accepted_hits. --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate'
+            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/acceptedHits. --outSAMtype BAM SortedByCoordinate'
         elif gzip =="True":
-            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/accepted_hits. --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate --readFilesCommand gunzip -c'
+            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/acceptedHits. --outSAMtype BAM SortedByCoordinate --readFilesCommand gunzip -c'
         else:
             print("Error: Invalid input for -g/--gzip. Input should be 'True' if using gunzipped files")
             sys.exit()
@@ -110,32 +110,10 @@ def main():
 
     alignment()
 
-    print("Aligning to virus reference using HISAT2")
-
-    def virus_alignment():
-        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet'
-        print('Running ', cmd2)
-        os.system(cmd2)
-
-    virus_alignment()
-
-    print("Converting SAM to BAM")
-
-    def sam_to_bam():
-        cmd3 = 'samtools view -Sb -h ' + out + '/unmapped_aln.sam > ' + out + '/unmapped_aln.bam'
-        print('Running ', cmd3)
-        os.system(cmd3)
-
-    sam_to_bam()
-
-    print("Sorting BAM")
+    print("Resorting BAM")
 
     def sort():
-        cmd4 = 'samtools sort ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_Coord_sorted.bam'
-        print('Running ', cmd4)
-        os.system(cmd4)
-
-        cmd5 = 'samtools sort -n ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_sorted.bam'
+        cmd5 = 'samtools sort -n ' + out + '/acceptedHits.Aligned.sortedByCoord.out.bam -o' + out + '/acceptedHits.Aligned.sorted.out.bam'
         print('Running ', cmd5)
         os.system(cmd5)
     sort()
@@ -143,7 +121,7 @@ def main():
     print("Indexing BAM")
 
     def index():
-        cmd6 = '''samtools index ''' + out + "/unmapped_aln_Coord_sorted.bam" + ''' '''
+        cmd6 = 'samtools index ' + out + "/acceptedHits.Aligned.sortedByCoord.out.bam"
         print('Running ', cmd6)
         os.system(cmd6)
 
@@ -152,11 +130,18 @@ def main():
     print("Processing Viral Counts using eXpress")
 
     def express():
-        cmd7 = 'express ' + index_vir + '/viruses.fasta ' + out + '/unmapped_aln_sorted.bam --no-bias-correct -o ' + out + '/eXpress/'
+        cmd7 = 'express ' + index_vir + '/viruses.fasta ' + out + '/acceptedHits.Aligned.sorted.out.bam -o ' + out + '/eXpress/'
         print('Running ', cmd7)
         os.system(cmd7)
 
     express()
+
+    def kallisto():
+        cmd6 = 'kallisto quant -i ' + index_vir + '/viruses.idx -o ' + out + '/kallisto/ ' + out + '/accepted_hits.Unmapped.out.mate1 ' + out + '/accepted_hits.Unmapped.out.mate2'
+        print('Running ', cmd6)
+        os.system(cmd6)
+
+    kallisto()
 
     print("Getting Top Viruses")
 
@@ -220,6 +205,7 @@ def main():
         os.system(cmd11)
         print('Running ', cmd12)
         os.system(cmd12)
+
     if consensus == 'True':
         consensus()
 
