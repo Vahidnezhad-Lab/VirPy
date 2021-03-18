@@ -131,19 +131,20 @@ def main():
     print("Sorting BAM")
 
     def sort():
-        cmd4 = 'samtools sort ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_Coord_sorted.bam -@ ' + n_thread
+        cmd4 = 'samtools sort -@ ' + n_thread + ' ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_Coord_sorted.bam'
         print('Running ', cmd4)
         os.system(cmd4)
 
-        cmd5 = 'samtools sort -n ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_sorted.bam- @ ' + n_thread
+        cmd5 = 'samtools sort -n -@ ' + n_thread + ' ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_sorted.bam'
         print('Running ', cmd5)
         os.system(cmd5)
+
     sort()
 
     print("Indexing BAM")
 
     def index():
-        cmd6 = 'samtools index ' + out + '/unmapped_aln_Coord_sorted.bam -@ ' + n_thread
+        cmd6 = 'samtools index -@ ' + n_thread + ' ' + out + '/unmapped_aln_Coord_sorted.bam'
         print('Running ', cmd6)
         os.system(cmd6)
 
