@@ -94,31 +94,6 @@ def main():
 
     os.system('ulimit -n 2048')
 
-    print("Aligning to human reference using STAR")
-
-    def alignment():
-        #cmd1='hisat2 -x '+index_dir+' -1 '+fq1+' -2'+fq2+' -S '+out+'/accepted_hits.sam -p '+n_thread+' --quiet'
-        if gzip == "False":
-            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/accepted_hits. --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate'
-        elif gzip =="True":
-            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/accepted_hits. --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate --readFilesCommand gunzip -c'
-        else:
-            print("Error: Invalid input for -g/--gzip. Input should be 'True' if using gunzipped files")
-            sys.exit()
-        print('Running ', cmd1)
-        os.system(cmd1)
-
-    alignment()
-
-    print("Aligning to virus reference using HISAT2")
-
-    def virus_alignment():
-        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet'
-        print('Running ', cmd2)
-        os.system(cmd2)
-
-    virus_alignment()
-
     print("Converting SAM to BAM")
 
     def sam_to_bam():
@@ -135,7 +110,7 @@ def main():
         print('Running ', cmd4)
         os.system(cmd4)
 
-        cmd5 = 'samtools sort -n ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_sorted.bam- @ ' + n_thread
+        cmd5 = 'samtools sort -n ' + out + '/unmapped_aln.bam -o' + out + '/unmapped_aln_sorted.bam -@ ' + n_thread
         print('Running ', cmd5)
         os.system(cmd5)
     sort()
