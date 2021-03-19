@@ -180,11 +180,11 @@ def main():
         for v in virus:
             i = v.split("|")[-1]
             if os.path.isfile(index_vir + "/annotationFiles/" + i + ".gtf"):
-                cmd8 = 'featurecounts -C -O -T ' + n_thread + ' -M -a ' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                cmd8 = 'featurecounts -M -O -T ' + n_thread + ' -a ' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
                 os.system(cmd8)
                 vir.append(v)
             elif os.path.isfile(index_vir + "/annotationFiles/" + i + ".saf"):
-                cmd8 = 'featurecounts -C -O -T ' + n_thread + ' -M -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                cmd8 = 'featurecounts -M -O -T ' + n_thread + ' -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
                 os.system(cmd8)
                 vir.append(v)
             else:
