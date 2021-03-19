@@ -118,7 +118,7 @@ def main():
     print("Indexing BAM")
 
     def index():
-        cmd6 = 'samtools index -@ ' + n_thread + ' ' + out + '/unmapped_aln_Coord_sorted.bam'
+        cmd6 = 'samtools index ' + out + '/unmapped_aln_Coord_sorted.bam'
         print('Running ', cmd6)
         os.system(cmd6)
 
