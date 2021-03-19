@@ -127,7 +127,7 @@ def main():
     print("Processing Viral Counts using eXpress")
 
     def stringtie():
-        cmd7 = 'stringtie ' + out + '/unmapped_aln_Coord_sorted.bam -A ' + out + '/stringtie/viral_abundance.txt -o' + out + '/stringtie/stringtie.gtf -p ' + n_thread
+        cmd7 = 'stringtie ' + out + '/unmapped_aln_Coord_sorted.bam -A ' + out + '/stringtie/viral_abundance.txt -o ' + out + '/stringtie/stringtie.gtf -p ' + n_thread
         print('Running ', cmd7)
         os.system(cmd7)
 
@@ -154,11 +154,11 @@ def main():
         for v in virus:
             i = v.split("|")[-1]
             if os.path.isfile(index_vir + "/annotationFiles/" + i + ".gtf"):
-                cmd8 = 'featurecounts -T ' + n_thread + ' -a -M' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                cmd8 = 'featurecounts -C -O -T ' + n_thread + ' -M -a ' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
                 os.system(cmd8)
                 vir.append(v)
             elif os.path.isfile(index_vir + "/annotationFiles/" + i + ".saf"):
-                cmd8 = 'featurecounts -T ' + n_thread + ' -M -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                cmd8 = 'featurecounts -C -O -T ' + n_thread + ' -M -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
                 os.system(cmd8)
                 vir.append(v)
             else:
