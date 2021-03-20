@@ -150,7 +150,7 @@ def main():
 
     index()
 
-    print("Processing Viral Counts using eXpress")
+    print("Processing Viral Counts using StringTie")
 
     def stringtie():
         cmd7 = 'stringtie ' + out + '/unmapped_aln_Coord_sorted.bam -A ' + out + '/stringtie/viral_abundance.txt -o ' + out + '/stringtie/stringtie.gtf -p ' + n_thread

@@ -159,6 +159,15 @@ def main():
 
     express()
 
+    print("Processing Viral Counts using StringTie")
+
+    def stringtie():
+        cmd8 = 'stringtie ' + out + '/unmapped_aln_Coord_sorted.bam -A ' + out + '/stringtie/viral_abundance.txt -o ' + out + '/stringtie/stringtie.gtf -p ' + n_thread
+        print('Running ', cmd8)
+        os.system(cmd8)
+
+    stringtie()
+
     print("Getting Top Viruses")
 
     virus = []
@@ -168,29 +177,37 @@ def main():
         os.system('mkdir ' + out + '/featurecounts')
         missingAnnot = open(out + '/featurecounts/missingAnnots.txt', 'w')
         topList = open(out + '/viruses_detected.txt', 'w')
-        reader = csv.reader(open(out + "/eXpress/results.xprs"), delimiter="\t")
+        reader_e = csv.reader(open(out + "/eXpress/results.xprs"), delimiter="\t")
 
-        topList.write('\t'.join(next(reader)))
+        topList.write('\t'.join(next(reader_e)))
         topList.write('\n')
 
-        for l in sorted(reader, key=itemgetter(5), reverse=True):
+        for l in sorted(reader_e, key=itemgetter(5), reverse=True):
             if int(float(l[5])) > 50:
                 post = l[1]
                 virus.append(post)
                 topList.write('\t'.join(l))
                 topList.write('\n')
 
+        reader_s = csv.reader(open(out + "/stringtie/viral_abundance.txt"), delimiter="\t")
+
+        for l in sorted(reader_s, key=itemgetter(5), reverse=True)[1:]:
+            if int(float(l[6])) > int(min_coverage):
+                post = l[2]
+                if post not in virus:
+                    virus.append(post)
+
         print("Quantifying Viral Features using featureCounts")
 
         for v in virus:
             i = v.split("|")[-1]
             if os.path.isfile(index_vir + "/annotationFiles/" + i + ".gtf"):
-                cmd8 = 'featurecounts -M -O -T ' + n_thread + ' -a ' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
-                os.system(cmd8)
+                cmd9 = 'featurecounts -M -O -T ' + n_thread + ' -a ' + index_vir + '/annotationFiles/' + i + '.gtf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                os.system(cmd9)
                 vir.append(v)
             elif os.path.isfile(index_vir + "/annotationFiles/" + i + ".saf"):
-                cmd8 = 'featurecounts -M -O -T ' + n_thread + ' -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
-                os.system(cmd8)
+                cmd9 = 'featurecounts -M -O -T ' + n_thread + ' -F SAF -a ' + index_vir + '/annotationFiles/' + i + '.saf ' + '-o ' + out + '/featureCounts/' + i + '_counts.txt ' + out + '/unmapped_aln_sorted.bam'
+                os.system(cmd9)
                 vir.append(v)
             else:
                 print('> There was no gene annotation file (.gtf/.saf) found for ' + i)
@@ -204,27 +221,30 @@ def main():
 
     def call_variants():
         os.system('mkdir ' + out + '/VariantCalling')
-        cmd9 = 'freebayes -f ' + index_vir + '/viruses.fasta -b ' + out + '/unmapped_aln_Coord_sorted.bam --min-coverage ' + min_coverage + ' > ' + out + '/VariantCalling/variants.vcf'
-        print('Running ', cmd9)
-        os.system(cmd9)
-        cmd10 = 'java -jar snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
+        cmd10 = 'freebayes -f ' + index_vir + '/viruses.fasta -b ' + out + '/unmapped_aln_Coord_sorted.bam --min-coverage ' + min_coverage + ' > ' + out + '/VariantCalling/variants.vcf'
         print('Running ', cmd10)
         os.system(cmd10)
+        cmd11 = 'java -jar snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
+        print('Running ', cmd11)
+        os.system(cmd11)
         os.system('mv snpEff_genes.txt ' + out + '/VariantCalling')
         os.system('mv snpEff_summary.html ' + out + '/VariantCalling')
+
     call_variants()
 
     def consensus():
-        cmd11 = './gatk IndexFeatureFile ' + out + '/VariantCalling/variants.ann.vcf'
-        cmd12 = './gatk FastaAlternateReferenceMaker -R ' + index_vir + '/viruses.fasta -O ' + out + '/VariantCalling/consensus.fasta -V ' + out + '/VariantCalling/variants.ann.vcf'
-        print('Running ', cmd11)
-        os.system(cmd11)
+        cmd12 = './gatk IndexFeatureFile ' + out + '/VariantCalling/variants.ann.vcf'
+        cmd13 = './gatk FastaAlternateReferenceMaker -R ' + index_vir + '/viruses.fasta -O ' + out + '/VariantCalling/consensus.fasta -V ' + out + '/VariantCalling/variants.ann.vcf'
         print('Running ', cmd12)
         os.system(cmd12)
+        print('Running ', cmd13)
+        os.system(cmd13)
+
     if consensus == 'True':
         consensus()
 
     print("Outputs are stored in " + out + ". Thank you for using VirPy!")
+
 
 if __name__ == '__main__':
     main()
