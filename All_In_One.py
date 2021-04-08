@@ -104,8 +104,8 @@ def main():
     min_coverage = args.min_coverage
     consensus = args.consensus
 
-    human_out = out + '/Human'
-    virus_out = out + '/Virus'
+    human_out = out + '/Human/'
+    virus_out = out + '/Virus/'
 
     os.system('mkdir ' + human_out)
     os.system('mkdir ' + virus_out)
@@ -153,34 +153,34 @@ def main():
 
     print("Converting transcriptome SAM to BAM")
     def trans_sam_to_bam():
-        cmd = 'samtools view -Sb -h ' + human_out + '/trans.sam > ' + human_out + '_trans.bam'
+        cmd = 'samtools view -Sb -h ' + human_out + 'trans.sam > ' + human_out + 'trans.bam'
         print('Running ', cmd)
         os.system(cmd)
     trans_sam_to_bam()
 
     print("Sorting transcriptome BAM")
     def trans_sort():
-        cmd = 'samtools sort -@ ' + n_thread + ' ' + human_out + '/trans.bam -o ' + human_out + '_trans_Coord_sorted.bam'
+        cmd = 'samtools sort -@ ' + n_thread + ' ' + human_out + 'trans.bam -o ' + human_out + 'trans_Coord_sorted.bam'
         print('Running ', cmd)
         os.system(cmd)
     trans_sort()
 
     print("Adding Read Groups")
     def addreadgroup():
-        cmd = 'picard AddOrReplaceReadGroups ' + 'I=' + human_out + '/accepted_hits.bam ' + 'O=' + human_out + '_RG.bam' + ' RGID=4 RGLB=twist RGPL=illumina RGPU=unit1 RGSM=' + human_out
+        cmd = 'picard AddOrReplaceReadGroups ' + 'I=' + human_out + 'accepted_hits.Aligned.sortedByCoord.out.bam ' + 'O=' + human_out + 'RG.bam' + ' RGID=4 RGLB=twist RGPL=illumina RGPU=unit1 RGSM=' + human_out
         print('Running ', cmd)
         os.system(cmd)
 
-        cmd1 = 'picard AddOrReplaceReadGroups ' + 'I=' + human_out + 'trans_Coord_sorted.bam' + 'O=' + human_out + '_Trans_RG.bam' + 'RGID=4 RGLB=twist RGPL=illumina RGPU=unit1 RGSM=' + human_out
+        cmd1 = 'picard AddOrReplaceReadGroups ' + 'I=' + human_out + 'trans_Coord_sorted.bam' + 'O=' + human_out + 'Trans_RG.bam' + 'RGID=4 RGLB=twist RGPL=illumina RGPU=unit1 RGSM=' + human_out
         print('Running ', cmd1)
         os.system(cmd1)
     addreadgroup()
 
     print("Marking Duplicates")
     def markduplicate():
-        cmd = 'picard MarkDuplicates ' + 'I=' + human_out + '_RG.bam' + 'O=' + human_out + 'MarkDup_RG.Bam' + 'M=' + human_out + 'marked_dup_metrics.tx'
+        cmd = 'picard MarkDuplicates ' + 'I=' + human_out + 'RG.bam' + 'O=' + human_out + 'MarkDup_RG.Bam' + 'M=' + human_out + 'marked_dup_metrics.tx'
         os.system(cmd)
-        cmd1 = 'picard MarkDuplicates ' + 'I=' + human_out + '_Trans_RG.bam' + 'O=' + human_out + 'MarkDup_Trans_RG.bam ' + 'M=' + human_out + 'trans_marked_dup_metrics.tx'
+        cmd1 = 'picard MarkDuplicates ' + 'I=' + human_out + 'Trans_RG.bam' + 'O=' + human_out + 'MarkDup_Trans_RG.bam ' + 'M=' + human_out + 'trans_marked_dup_metrics.tx'
         os.system(cmd1)
     markduplicate()
 
@@ -196,32 +196,32 @@ def main():
 
     print("Splitting Cigar Reads")
     def splitNcigar():
-        cmd = './gatk SplitNCigarReads -R ' + index_dir + '/*.fasta -I ' + human_out + 'MarkDup_RG.Bam -O ' + human_out + '_splitNcigar.Bam '
+        cmd = './gatk SplitNCigarReads -R ' + index_dir + '/*.fasta -I ' + human_out + 'MarkDup_RG.Bam -O ' + human_out + 'splitNcigar.bam '
         print('Running ', cmd)
         os.system(cmd)
     splitNcigar()
 
     print("Sammtools MPileUp")
     def variantCalling():
-        cmd = 'samtools mpileup -f ' + transcriptome + '/*.fasta  -g ' + human_out + 'MarkDup_Trans_RG.bam ' + '|bcftools call -m > ' + human_out + '_trans.vcf'
+        cmd = 'samtools mpileup -f ' + transcriptome + '/*.fasta  -g ' + human_out + 'MarkDup_Trans_RG.bam ' + '|bcftools call -m > ' + human_out + 'trans.vcf'
         print('Running ', cmd)
         os.system(cmd)
 
-        cmd1 = './gatk HaplotypeCaller -R ' + index_dir + '/*.fasta -I ' + human_out + '_splitNcigar.Bam -O ' + '_gen.vcf'
+        cmd1 = './gatk HaplotypeCaller -R ' + index_dir + '/*.fasta -I ' + human_out + 'splitNcigar.bam -O ' + 'gen.vcf'
         print('Running ', cmd1)
         os.system(cmd1)
     variantCalling()
 
     print("Merging VCFs")
     def vcfmerg():
-        cmd = 'bcftools merg ' + human_out + '/*.vcf -Oz -o ' + human_out + '_Merged.vcf'
+        cmd = 'bcftools merg ' + human_out + '/*.vcf -Oz -o ' + human_out + 'Merged.vcf'
         print('Running ', cmd)
         os.system(cmd)
     vcfmerg()
 
     print("Homozygosity Mapping")
     def ROH():
-        cmd = 'vcftools --vcf ' + '' + human_out + '_Merged.vcf --plink --out' + human_out + 'plink'
+        cmd = 'vcftools --vcf ' + '' + human_out + 'Merged.vcf --plink --out' + human_out + 'plink'
         print('Running ', cmd)
         os.system(cmd)
         cmd1 = 'plink --file ' + human_out + 'plink' + ' –homozyg '
