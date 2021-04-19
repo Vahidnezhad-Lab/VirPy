@@ -1,7 +1,7 @@
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	200	706	.	+	0	gene_id "1"; transcript_id "1.0";
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	706	1011	.	+	0	gene_id "2"; transcript_id "2.0";
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	998	2809	.	+	0	gene_id "3"; transcript_id "3.0";
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	2751	4262	.	+	0	gene_id "4"; transcript_id "4.0";
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	3037	4017	.	+	0	gene_id "5"; transcript_id "5.0";
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	4351	5913	.	+	0	gene_id "6"; transcript_id "6.0";
-gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	5929	7485	.	+	0	gene_id "7"; transcript_id "7.0";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	200	706	.	+	0	gene_id "E6"; transcript_id "E6";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	706	1011	.	+	0	gene_id "E7"; transcript_id "E7";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	998	2809	.	+	0	gene_id "E1"; transcript_id "E1";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	2751	4262	.	+	0	gene_id "E2"; transcript_id "E2";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	3037	4017	.	+	0	gene_id "E4"; transcript_id "E4";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	4351	5913	.	+	0	gene_id "L2"; transcript_id "L2";
+gi|1020170|lcl|HPV21REF.1|_Human_papillomavirus_21_HPV21_complete_genome	Genbank	CDS	5929	7485	.	+	0	gene_id "L1"; transcript_id "L1";

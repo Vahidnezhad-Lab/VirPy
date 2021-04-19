@@ -1,8 +1,8 @@
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	105	581	.	+	0	gene_id "E6"; transcript_id "1.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	590	907	.	+	0	gene_id "E7"; transcript_id "2.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	914	2887	.	+	0	gene_id "E1"; transcript_id "3.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	2817	3914	.	+	0	gene_id "E2"; transcript_id "4.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	3418	3684	.	+	0	gene_id "E4"; transcript_id "5.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	3936	4157	.	+	0	gene_id "E5"; transcript_id "6.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	4244	5632	.	+	0	gene_id "L2"; transcript_id "7.0";
-gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	5430	7136	.	+	0	gene_id "L1"; transcript_id "8.0";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	105	581	.	+	0	gene_id "E6"; transcript_id "E6";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	590	907	.	+	0	gene_id "E7"; transcript_id "E7";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	914	2887	.	+	0	gene_id "E1"; transcript_id "E1";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	2817	3914	.	+	0	gene_id "E2"; transcript_id "E2";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	3418	3684	.	+	0	gene_id "E4"; transcript_id "E4";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	3936	4157	.	+	0	gene_id "E5"; transcript_id "E5";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	4244	5632	.	+	0	gene_id "L2"; transcript_id "L2";
+gi|60975|lcl|HPV18REF.1|_Human_papillomavirus_18_HPV18_complete_genome	RefSeq	exon	5430	7136	.	+	0	gene_id "L1"; transcript_id "L1";

@@ -1,0 +1,7 @@
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	99	575	.	+	0	gene_id "E6"; transcript_id "E6_early";
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	539	814	.	+	0	gene_id "E7"; transcript_id "E7_early";
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	822	2753	.	+	0	gene_id "E1"; transcript_id "E1_early";
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	2695	3861	.	+	0	gene_id "E2"; transcript_id "E2_early";
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	4389	5783	.	+	0	gene_id "L2"; transcript_id "L2_late";
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	5437	7221	.	+	0	gene_id "L1"; transcript_id "L1_alternative";
+_Human_papillomavirus_27_HPV27_complete_genome	EMBL	exon	5764	7221	.	+	0	gene_id "L1"; transcript_id "L1_late";
