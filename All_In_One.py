@@ -167,7 +167,7 @@ def main():
 
     print("Adding Read Groups")
     def addreadgroup():
-        cmd = 'picard AddOrReplaceReadGroups ' + 'I=' + human_out + 'accepted_hits.Aligned.sortedByCoord.out.bam ' + 'O=' + human_out + 'RG.bam' + ' RGID=4 RGLB=twist RGPL=illumina RGPU=unit1 RGSM=' + human_out
+        cmd = 'picard AddOrReplaceReadGroups ' + 'I=' + out + '/accepted_hits.Aligned.sortedByCoord.out.bam ' + 'O=' + human_out + 'RG.bam' + ' RGID=4 RGLB=twist RGPL=illumina RGPU=unit1 RGSM=' + human_out
         print('Running ', cmd)
         os.system(cmd)
 
