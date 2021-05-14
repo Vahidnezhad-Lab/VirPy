@@ -1,8 +1,8 @@
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	108	557	.	+	0	gene_id "1"; transcript_id "1.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	560	856	.	+	0	gene_id "2"; transcript_id "2.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	862	2751	.	+	0	gene_id "3"; transcript_id "3.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	2693	3811	.	+	0	gene_id "4"; transcript_id "4.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	3270	3578	.	+	0	gene_id "5"; transcript_id "5.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	3816	4070	.	+	0	gene_id "6"; transcript_id "6.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	4171	5571	.	+	0	gene_id "7"; transcript_id "7.0";
-gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	CDS	5552	7066	.	+	0	gene_id "8"; transcript_id "8.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	108	557	.	+	0	gene_id "1"; transcript_id "1.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	560	856	.	+	0	gene_id "2"; transcript_id "2.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	862	2751	.	+	0	gene_id "3"; transcript_id "3.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	2693	3811	.	+	0	gene_id "4"; transcript_id "4.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	3270	3578	.	+	0	gene_id "5"; transcript_id "5.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	3816	4070	.	+	0	gene_id "6"; transcript_id "6.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	4171	5571	.	+	0	gene_id "7"; transcript_id "7.0";
+gi|333048|lcl|HPV31REF.1|_Human_papillomavirus_31_HPV31_complete_genome	Genbank	exon	5552	7066	.	+	0	gene_id "8"; transcript_id "8.0";

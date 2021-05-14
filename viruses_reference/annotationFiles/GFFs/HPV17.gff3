@@ -1,0 +1,11 @@
+##sequence-region JN211195.1 1 7426
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=10607
+JN211195.1	Genbank	region	1	7426	.	+	.	ID=JN211195.1:1..7426;Dbxref=taxon:10607;Is_circular=true;acronym=HPV17;collection-date=2009;country=Japan;gbkey=Src;genome=genomic;isolate=S410;mol_type=genomic DNA;nat-host=Homo sapiens
+JN211195.1	Genbank	CDS	200	625	.	+	0	ID=cds-AFL02859.1;Dbxref=NCBI_GP:AFL02859.1;Name=AFL02859.1;gbkey=CDS;product=E6;protein_id=AFL02859.1
+JN211195.1	Genbank	CDS	622	909	.	+	0	ID=cds-AFL02860.1;Dbxref=NCBI_GP:AFL02860.1;Name=AFL02860.1;gbkey=CDS;product=E7;protein_id=AFL02860.1
+JN211195.1	Genbank	CDS	902	2731	.	+	0	ID=cds-AFL02861.1;Dbxref=NCBI_GP:AFL02861.1;Name=AFL02861.1;gbkey=CDS;product=E1;protein_id=AFL02861.1
+JN211195.1	Genbank	CDS	2673	4031	.	+	0	ID=cds-AFL02862.1;Dbxref=NCBI_GP:AFL02862.1;Name=AFL02862.1;gbkey=CDS;product=E2;protein_id=AFL02862.1
+JN211195.1	Genbank	CDS	3196	3786	.	+	0	ID=cds-AFL02863.1;Dbxref=NCBI_GP:AFL02863.1;Name=AFL02863.1;gbkey=CDS;product=E4;protein_id=AFL02863.1
+JN211195.1	Genbank	CDS	4101	5711	.	+	0	ID=cds-AFL02864.1;Dbxref=NCBI_GP:AFL02864.1;Name=AFL02864.1;gbkey=CDS;product=L2;protein_id=AFL02864.1
+JN211195.1	Genbank	CDS	5723	7246	.	+	0	ID=cds-AFL02865.1;Dbxref=NCBI_GP:AFL02865.1;Name=AFL02865.1;gbkey=CDS;product=L1;protein_id=AFL02865.1
+

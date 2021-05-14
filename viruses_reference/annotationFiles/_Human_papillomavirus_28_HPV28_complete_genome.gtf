@@ -1,0 +1,7 @@
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	102	542	.	+	0	gene_id "E6"; transcript_id "E6";
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	518	781	.	+	0	gene_id "E7"; transcript_id "E7";
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	788	2776	.	+	0	gene_id "E1"; transcript_id "E1";
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	2718	3848	.	+	0	gene_id "E2"; transcript_id "E2";
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	3301	3609	.	+	0	gene_id "E4"; transcript_id "E4";
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	4338	5759	.	+	0	gene_id "L2"; transcript_id "L2";
+_Human_papillomavirus_28_HPV28_complete_genome	Genbank	exon	5740	7248	.	+	0	gene_id "L1"; transcript_id "L1";

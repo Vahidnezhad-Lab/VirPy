@@ -1,0 +1,7 @@
+Gene ID	Gene Name	Reference	Strand	Start	End	Coverage	FPKM	TPM
+STRG.1	-	NC_001669.1_Simian_virus_40_complete_genome	-	4280	4688	11.102041	48.468662	117.870499
+STRG.2	-	NC_001702.1_Murine_type_C_retrovirus_complete_genome	+	144	5717	1.468750	6.412185	15.593736
+STRG.3	-	U13766.1_Murine_leukemia_virus_MCF1233_complete_genome	.	2971	5720	4.804001	20.973034	51.004135
+STRG.4	-	U13766.1_Murine_leukemia_virus_MCF1233_complete_genome	.	7183	8134	12.774159	55.768700	135.623398
+STRG.5	-	HQ246218.1_Murine_leukemia_virus_N417_complete_genome	+	21	5714	3.181013	13.887486	33.772850
+STRG.6	-	gi|333071|lcl|HPV5REF.1|_Human_Papillomavirus_5_HPV5_complete_genome	+	419	6450	52240.792969	411057.125000	999646.062500

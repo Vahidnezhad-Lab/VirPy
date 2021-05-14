@@ -1,8 +1,8 @@
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	109	558	.	+	0	gene_id "1"; transcript_id "E6";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	573	866	.	+	0	gene_id "2"; transcript_id "E7";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	879	2813	.	+	0	gene_id "3"; transcript_id "E1";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	2749	3810	.	+	0	gene_id "4"; transcript_id "E2";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	3326	3577	.	+	0	gene_id "5"; transcript_id "5.0";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	3854	4081	.	+	0	gene_id "6"; transcript_id "E5_ALPHA";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	4210	5613	.	+	0	gene_id "7"; transcript_id "L2";
-gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	CDS	5594	7093	.	+	0	gene_id "8"; transcript_id "L1";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	109	558	.	+	0	gene_id "1"; transcript_id "E6";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	573	866	.	+	0	gene_id "2"; transcript_id "E7";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	879	2813	.	+	0	gene_id "3"; transcript_id "E1";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	2749	3810	.	+	0	gene_id "4"; transcript_id "E2";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	3326	3577	.	+	0	gene_id "5"; transcript_id "5.0";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	3854	4081	.	+	0	gene_id "6"; transcript_id "E5_ALPHA";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	4210	5613	.	+	0	gene_id "7"; transcript_id "L2";
+gi|333049|lcl|HPV33REF.1|_Human_papillomavirus_33_HPV33_complete_genome	Genbank	exon	5594	7093	.	+	0	gene_id "8"; transcript_id "L1";

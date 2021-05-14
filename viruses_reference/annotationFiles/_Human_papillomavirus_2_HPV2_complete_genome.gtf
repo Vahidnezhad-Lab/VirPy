@@ -1,7 +1,7 @@
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	89	568	.	+	0	gene_id "E6"; transcript_id "E6";
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	529	807	.	+	0	gene_id "E7"; transcript_id "E7";
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	812	2743	.	+	0	gene_id "E1"; transcript_id "E1";
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	2685	3860	.	+	0	gene_id "E2"; transcript_id "E2";
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	3223	3621	.	+	0	gene_id "E4"; transcript_id "E4";
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	4235	5809	.	+	0	gene_id "L2"; transcript_id "L2";
-gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	CDS	5742	7274	.	+	0	gene_id "L1"; transcript_id "L1";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	89	568	.	+	0	gene_id "E6"; transcript_id "E6";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	529	807	.	+	0	gene_id "E7"; transcript_id "E7";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	812	2743	.	+	0	gene_id "E1"; transcript_id "E1";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	2685	3860	.	+	0	gene_id "E2"; transcript_id "E2";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	3223	3621	.	+	0	gene_id "E4"; transcript_id "E4";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	4235	5809	.	+	0	gene_id "L2"; transcript_id "L2";
+gi|9626032|lcl|HPV2REF.1|_Human_papillomavirus_2_HPV2_complete_genome	RefSeq	exon	5742	7274	.	+	0	gene_id "L1"; transcript_id "L1";

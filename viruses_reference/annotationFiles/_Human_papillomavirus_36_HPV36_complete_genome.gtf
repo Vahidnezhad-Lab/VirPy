@@ -1,7 +1,7 @@
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	200	673	.	+	0	gene_id "E6"; transcript_id "1.0";
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	663	971	.	+	0	gene_id "E7"; transcript_id "2.0";
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	958	2772	.	+	0	gene_id "E1"; transcript_id "3.0";
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	2714	4243	.	+	0	gene_id "E2"; transcript_id "4.0";
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	3273	3998	.	+	0	gene_id "E4"; transcript_id "5.0";
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	4321	5877	.	+	0	gene_id "L2"; transcript_id "6.0";
-gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	5891	7441	.	+	0	gene_id "L1"; transcript_id "7.0";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	200	673	.	+	0	gene_id "E6"; transcript_id "E6";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	663	971	.	+	0	gene_id "E7"; transcript_id "E7";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	958	2772	.	+	0	gene_id "E1"; transcript_id "E1";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	2714	4243	.	+	0	gene_id "E2"; transcript_id "E2";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	3273	3998	.	+	0	gene_id "E4"; transcript_id "E4";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	4321	5877	.	+	0	gene_id "L2"; transcript_id "L2";
+gi|1020218|lcl|HPV36REF.1|_Human_papillomavirus_36_HPV36_complete_genome	Genbank	exon	5891	7441	.	+	0	gene_id "L1"; transcript_id "L1";

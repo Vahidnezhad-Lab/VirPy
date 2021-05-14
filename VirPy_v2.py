@@ -201,7 +201,7 @@ def main():
         cmd9 = 'freebayes -f ' + index_vir + '/viruses.fasta -b ' + out + '/unmapped_aln_Coord_sorted.bam --min-coverage ' + min_coverage + ' > ' + out + '/VariantCalling/variants.vcf'
         print('Running ', cmd9)
         os.system(cmd9)
-        cmd10 = 'java -jar snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
+        cmd10 = 'java -jar ' + index_vir + '/snpEff/snpEff.jar viruses ' + out + '/VariantCalling/variants.vcf > ' + out + '/VariantCalling/variants.ann.vcf'
         print('Running ', cmd10)
         os.system(cmd10)
         os.system('mv snpEff_genes.txt ' + out + '/VariantCalling')
