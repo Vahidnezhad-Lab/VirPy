@@ -1,0 +1,14 @@
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	336	1637	.	+	0	gene_id "1"; transcript_id "1.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	1637	4642	.	+	0	gene_id "1"; transcript_id "1.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	336	1838	.	+	0	gene_id "2"; transcript_id "2.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	4587	5165	.	+	0	gene_id "3"; transcript_id "3.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	5105	5319	.	+	0	gene_id "4"; transcript_id "4.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	5321	5396	.	+	1	gene_id "4"; transcript_id "4.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	5377	5591	.	+	0	gene_id "5"; transcript_id "5.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	7925	7970	.	+	1	gene_id "5"; transcript_id "5.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	5516	5591	.	+	0	gene_id "6"; transcript_id "6.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	7925	8199	.	+	2	gene_id "6"; transcript_id "6.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	5608	5856	.	+	0	gene_id "7"; transcript_id "7.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	5771	8341	.	+	0	gene_id "8"; transcript_id "8.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	6919	7488	.	-	0	gene_id "9"; transcript_id "9.0";
+NC_001802.1_Human_immunodeficiency_virus_1_complete_genome	RefSeq	exon	8343	8963	.	+	0	gene_id "10"; transcript_id "10.0";
