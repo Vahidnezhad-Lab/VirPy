@@ -1,0 +1,7 @@
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	149	646	.	+	0	gene_id "1"; transcript_id "E6";
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	643	945	.	+	0	gene_id "2"; transcript_id "E7";
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	932	2758	.	+	0	gene_id "3"; transcript_id "E1";
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	2700	4010	.	+	0	gene_id "4"; transcript_id "E2";
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	3184	3765	.	+	0	gene_id "5"; transcript_id "E4";
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	4077	5651	.	+	0	gene_id "6"; transcript_id "L2";
+gi|1020178|lcl|HPV22REF.1|_Human_papillomavirus_22_HPV22_complete_genome	Genbank	exon	5662	7194	.	+	0	gene_id "7"; transcript_id "L1";

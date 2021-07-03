@@ -1,0 +1,7 @@
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	200	616	.	+	0	gene_id "1"; transcript_id "E6";
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	613	918	.	+	0	gene_id "2"; transcript_id "E7";
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	905	2734	.	+	0	gene_id "3"; transcript_id "E1";
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	2721	4130	.	+	0	gene_id "4"; transcript_id "E2";
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	3238	3885	.	+	0	gene_id "5"; transcript_id "E4";
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	4193	5758	.	+	0	gene_id "6"; transcript_id "L2";
+gi|2911544|lcl|HPV75REF.1|_Human_papillomavirus_75_HPV75_complete_genome	EMBL	exon	5771	7300	.	+	0	gene_id "7"; transcript_id "L1";

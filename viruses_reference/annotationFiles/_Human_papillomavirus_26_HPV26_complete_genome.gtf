@@ -1,0 +1,6 @@
+gi|9627305|lcl|HPV26REF.1|_Human_papillomavirus_26_HPV26_complete_genome	RefSeq	exon	97	549	.	+	0	gene_id "1"; transcript_id "E6";
+gi|9627305|lcl|HPV26REF.1|_Human_papillomavirus_26_HPV26_complete_genome	RefSeq	exon	556	870	.	+	0	gene_id "2"; transcript_id "E7";
+gi|9627305|lcl|HPV26REF.1|_Human_papillomavirus_26_HPV26_complete_genome	RefSeq	exon	878	2794	.	+	0	gene_id "3"; transcript_id "E1";
+gi|9627305|lcl|HPV26REF.1|_Human_papillomavirus_26_HPV26_complete_genome	RefSeq	exon	2736	3863	.	+	0	gene_id "4"; transcript_id "E2";
+gi|9627305|lcl|HPV26REF.1|_Human_papillomavirus_26_HPV26_complete_genome	RefSeq	exon	4189	5607	.	+	0	gene_id "5"; transcript_id "L2";
+gi|9627305|lcl|HPV26REF.1|_Human_papillomavirus_26_HPV26_complete_genome	RefSeq	exon	5588	7099	.	+	0	gene_id "6"; transcript_id "L1";

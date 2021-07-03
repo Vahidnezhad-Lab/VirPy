@@ -1,0 +1,6 @@
+gi|396932|lcl|HPV17REF.1|_Human_papillomavirus_17_HPV17_complete_genome	EMBL	exon	200	625	.	+	0	gene_id "1"; transcript_id "E6";
+gi|396932|lcl|HPV17REF.1|_Human_papillomavirus_17_HPV17_complete_genome	EMBL	exon	622	909	.	+	0	gene_id "2"; transcript_id "E7";
+gi|396932|lcl|HPV17REF.1|_Human_papillomavirus_17_HPV17_complete_genome	EMBL	exon	902	2731	.	+	0	gene_id "3"; transcript_id "E1";
+gi|396932|lcl|HPV17REF.1|_Human_papillomavirus_17_HPV17_complete_genome	EMBL	exon	2673	4031	.	+	0	gene_id "4"; transcript_id "E2";
+gi|396932|lcl|HPV17REF.1|_Human_papillomavirus_17_HPV17_complete_genome	EMBL	exon	4101	5675	.	+	0	gene_id "5"; transcript_id "L2";
+gi|396932|lcl|HPV17REF.1|_Human_papillomavirus_17_HPV17_complete_genome	EMBL	exon	5724	7247	.	+	0	gene_id "6"; transcript_id "L1";

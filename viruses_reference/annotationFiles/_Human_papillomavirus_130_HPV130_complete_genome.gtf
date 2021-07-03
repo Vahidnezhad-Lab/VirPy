@@ -1,0 +1,7 @@
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	1	432	.	+	0	gene_id "1"; transcript_id "E6";
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	434	730	.	+	0	gene_id "2"; transcript_id "E7";
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	717	2546	.	+	0	gene_id "3"; transcript_id "E1";
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	2488	3672	.	+	0	gene_id "4"; transcript_id "E2";
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	3038	3439	.	+	0	gene_id "5"; transcript_id "E4";
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	3674	5251	.	+	0	gene_id "6"; transcript_id "L2";
+gi|312451789|lcl|HPV130REF.1|_Human_papillomavirus_130_HPV130_complete_genome	Genbank	exon	5262	6824	.	+	0	gene_id "7"; transcript_id "L1";

@@ -1,0 +1,7 @@
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	1	447	.	+	0	gene_id "1"; transcript_id "E6";
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	423	713	.	+	0	gene_id "2"; transcript_id "E7";
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	715	2667	.	+	0	gene_id "3"; transcript_id "E1";
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	2609	3742	.	+	0	gene_id "4"; transcript_id "E2";
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	3198	3509	.	+	0	gene_id "5"; transcript_id "E4";
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	4263	5687	.	+	0	gene_id "6"; transcript_id "L2";
+gi|12958167|lcl|HPV84REF.1|_Human_papillomavirus_84_HPV84_complete_genome	Genbank	exon	5665	7176	.	+	0	gene_id "7"; transcript_id "L1";

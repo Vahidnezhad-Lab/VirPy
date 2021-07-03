@@ -1,0 +1,7 @@
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	157	588	.	+	0	gene_id "1"; transcript_id "E6";
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	591	890	.	+	0	gene_id "2"; transcript_id "E7";
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	874	2685	.	+	0	gene_id "3"; transcript_id "E1";
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	2621	3793	.	+	0	gene_id "4"; transcript_id "E2";
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	3048	3566	.	+	0	gene_id "5"; transcript_id "E4";
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	3795	5285	.	+	0	gene_id "6"; transcript_id "L2";
+gi|409183105|lcl|HPV169REF.1|_Human_papillomavirus_169_HPV169_complete_genome	Genbank	exon	5294	6871	.	+	0	gene_id "7"; transcript_id "L1";

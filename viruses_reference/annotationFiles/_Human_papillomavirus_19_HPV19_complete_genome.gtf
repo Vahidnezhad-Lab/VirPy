@@ -1,0 +1,6 @@
+gi|396940|lcl|HPV19REF.1|_Human_papillomavirus_19_HPV19_complete_genome	EMBL	exon	200	670	.	+	0	gene_id "1"; transcript_id "E6";
+gi|396940|lcl|HPV19REF.1|_Human_papillomavirus_19_HPV19_complete_genome	EMBL	exon	690	998	.	+	0	gene_id "2"; transcript_id "E7";
+gi|396940|lcl|HPV19REF.1|_Human_papillomavirus_19_HPV19_complete_genome	EMBL	exon	985	2799	.	+	0	gene_id "3"; transcript_id "E1";
+gi|396940|lcl|HPV19REF.1|_Human_papillomavirus_19_HPV19_complete_genome	EMBL	exon	2741	4222	.	+	0	gene_id "4"; transcript_id "E2";
+gi|396940|lcl|HPV19REF.1|_Human_papillomavirus_19_HPV19_complete_genome	EMBL	exon	4285	5847	.	+	0	gene_id "5"; transcript_id "L2";
+gi|396940|lcl|HPV19REF.1|_Human_papillomavirus_19_HPV19_complete_genome	EMBL	exon	5774	7414	.	+	0	gene_id "6"; transcript_id "L1";

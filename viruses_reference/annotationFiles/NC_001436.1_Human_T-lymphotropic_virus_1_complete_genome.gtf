@@ -1,0 +1,6 @@
+NC_001436.1_Human_T-lymphotropic_virus_1_complete_genome	RefSeq	exon	450	1739	.	+	0	gene_id "3"; transcript_id "gag-pro-pol";
+NC_001436.1_Human_T-lymphotropic_virus_1_complete_genome	RefSeq	exon	4773	4832	.	+	0	gene_id "6"; transcript_id "rex";
+NC_001436.1_Human_T-lymphotropic_virus_1_complete_genome	RefSeq	exon	6950	8008	.	+	0	gene_id "6"; transcript_id "rex";
+NC_001436.1_Human_T-lymphotropic_virus_1_complete_genome	RefSeq	exon	4829	4832	.	+	0	gene_id "7"; transcript_id "tax";
+NC_001436.1_Human_T-lymphotropic_virus_1_complete_genome	RefSeq	exon	6951	8008	.	+	2	gene_id "7"; transcript_id "tax";
+NC_001436.1_Human_T-lymphotropic_virus_1_complete_genome	RefSeq	exon	4829	6295	.	+	0	gene_id "8"; transcript_id "env";

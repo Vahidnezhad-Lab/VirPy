@@ -1,0 +1,7 @@
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	1	420	.	+	0	gene_id "1"; transcript_id "E6";
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	417	707	.	+	0	gene_id "2"; transcript_id "E7";
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	691	2496	.	+	0	gene_id "3"; transcript_id "E1";
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	2423	3610	.	+	0	gene_id "4"; transcript_id "E2";
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	2898	3386	.	+	0	gene_id "5"; transcript_id "E4";
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	3612	5177	.	+	0	gene_id "6"; transcript_id "L2";
+gi|343411609|lcl|HPV147REF.1|_Human_papillomavirus_147_HPV147_complete_genome	Genbank	exon	5189	6754	.	+	0	gene_id "7"; transcript_id "L1";

@@ -1,0 +1,6 @@
+NC_010277.1_Merkel_cell_polyomavirus_complete_genome	RefSeq	exon	196	429	.	+	0	gene_id "MCPyV_gp1"; transcript_id "MCPyV_gp1";
+NC_010277.1_Merkel_cell_polyomavirus_complete_genome	RefSeq	exon	861	1403	.	+	0	gene_id "MCPyV_gp1"; transcript_id "MCPyV_gp1";
+NC_010277.1_Merkel_cell_polyomavirus_complete_genome	RefSeq	exon	196	756	.	+	0	gene_id "MCPyV_gp2"; transcript_id "MCPyV_gp2";
+NC_010277.1_Merkel_cell_polyomavirus_complete_genome	RefSeq	exon	3156	4427	.	-	0	gene_id "MCPyV_gp3"; transcript_id "MCPyV_gp3";
+NC_010277.1_Merkel_cell_polyomavirus_complete_genome	RefSeq	exon	4393	5118	.	-	0	gene_id "MCPyV_gp4"; transcript_id "MCPyV_gp4";
+NC_010277.1_Merkel_cell_polyomavirus_complete_genome	RefSeq	exon	4393	4983	.	-	0	gene_id "MCPyV_gp5"; transcript_id "MCPyV_gp5";

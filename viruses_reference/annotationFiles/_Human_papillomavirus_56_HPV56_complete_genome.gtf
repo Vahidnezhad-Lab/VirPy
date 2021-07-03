@@ -1,0 +1,5 @@
+gi|397053|lcl|HPV56REF.1|_Human_papillomavirus_56_HPV56_complete_genome	EMBL	exon	102	566	.	+	0	gene_id "1"; transcript_id "E6";
+gi|397053|lcl|HPV56REF.1|_Human_papillomavirus_56_HPV56_complete_genome	EMBL	exon	572	889	.	+	0	gene_id "2"; transcript_id "E7";
+gi|397053|lcl|HPV56REF.1|_Human_papillomavirus_56_HPV56_complete_genome	EMBL	exon	2918	3850	.	+	0	gene_id "3"; transcript_id "E2";
+gi|397053|lcl|HPV56REF.1|_Human_papillomavirus_56_HPV56_complete_genome	EMBL	exon	4222	5616	.	+	0	gene_id "4"; transcript_id "L2";
+gi|397053|lcl|HPV56REF.1|_Human_papillomavirus_56_HPV56_complete_genome	EMBL	exon	5492	7096	.	+	0	gene_id "5"; transcript_id "L1";
