@@ -94,22 +94,6 @@ def main():
 
     os.system('ulimit -n 2048')
 
-    print("Aligning to human reference using STAR")
-
-    def alignment():
-        #cmd1='hisat2 -x '+index_dir+' -1 '+fq1+' -2'+fq2+' -S '+out+'/accepted_hits.sam -p '+n_thread+' --quiet'
-        if gzip == "False":
-            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/accepted_hits. --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate'
-        elif gzip =="True":
-            cmd1 = 'STAR --runThreadN ' + n_thread + ' --genomeDir ' + index_dir + ' --readFilesIn ' + fq1 + ' ' + fq2 + ' --outFileNamePrefix ' + out + '/accepted_hits. --outReadsUnmapped Fastx --outSAMtype BAM SortedByCoordinate --readFilesCommand gunzip -c'
-        else:
-            print("Error: Invalid input for -g/--gzip. Input should be 'True' if using gunzipped files")
-            sys.exit()
-        print('Running ', cmd1)
-        os.system(cmd1)
-
-    alignment()
-
     print("Aligning to virus reference using HISAT2")
 
     def virus_alignment():
