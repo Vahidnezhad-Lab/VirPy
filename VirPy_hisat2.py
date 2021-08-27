@@ -97,7 +97,7 @@ def main():
     print("Aligning to virus reference using HISAT2")
 
     def virus_alignment():
-        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet --no-mixed --no-discordant'
+        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --no-mixed --no-discordant'
         print('Running ', cmd2)
         os.system(cmd2)
 
