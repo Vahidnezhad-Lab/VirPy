@@ -113,7 +113,7 @@ def main():
     print("Aligning to virus reference using HISAT2")
 
     def virus_alignment():
-        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet --summary-file' + out + '/hisat2_summary.txt'
+        cmd2 = 'hisat2 -x ' + index_vir + '/viruses -1 ' + out + '/accepted_hits.Unmapped.out.mate1 -2 ' + out + '/accepted_hits.Unmapped.out.mate2 -S ' + out + '/unmapped_aln.sam -p ' + n_thread + ' --quiet --no-mixed --no-discordant'
         print('Running ', cmd2)
         os.system(cmd2)
 
@@ -122,7 +122,7 @@ def main():
     print("Converting SAM to BAM")
 
     def sam_to_bam():
-        cmd3 = 'samtools view -Sb -h ' + out + '/unmapped_aln.sam > ' + out + '/unmapped_aln.bam'
+        cmd3 = 'samtools view -Sb -F 256 -h ' + out + '/unmapped_aln.sam > ' + out + '/unmapped_aln.bam'
         print('Running ', cmd3)
         os.system(cmd3)
 
