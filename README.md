@@ -102,4 +102,4 @@ gt gff3_to_gtf [example.gff3]
 5. Alternatively, a ".saf" file can be generated manually, using the following header:
 ```
 GeneID	Chr	Start	END	Strand
-```
+``` 
