@@ -88,3 +88,18 @@ python VirPy.py -t 4 -1 Test.1.fastq -2 Test.2.fastq -o outputDir -index human_r
 	- Text file for each virus detected with viral feature quantification
 * VariantCalling directory
 
+## Setting Up Custom Viruses of Interest
+Custom viruses can be added for investigators interested in viruses not already included within the data files. 
+1. Append the genome file (.fasta) for the virus of interest to the "viruses.fasta" file following the same formatting of other entries. Many can be found on https://www.ncbi.nlm.nih.gov/. Re-build the HISAT2 Index file as described in the "Building HISAT Viral Genome Index Files" section above.
+2. On the NCBI page, go to "Send to:" -> "File" -> "GFF3" -> "Create File".
+3. Convert the GFF3 file to a GTF file. This can be accomplished by using genometools using:
+```
+conda install -c bioconda genometools
+gt gff3_to_gtf [example.gff3]
+```
+*Note: Often you will have to add "##gff-version 3" to the header at the top of the gff3 file
+4. Make sure to check that the ".gtf" file is named the same as it is in "viruses.fasta" file and is in the annotationFiles directory
+5. Alternatively, a ".saf" file can be generated manually, using the following header:
+```
+GeneID	Chr	Start	END	Strand
+```
