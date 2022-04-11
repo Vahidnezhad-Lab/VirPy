@@ -40,6 +40,12 @@ To build STAR genome index:
 ```
 star --runMode genomeGenerate --runThreadN NumberOfThreads --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta
 ```
+## Building HISAT Viral Genome Index Files
+The viral genome index files are included within the data directory. If you are interested in adding custom viruses of interest to the directory, please recreate the viral genome index files using the following steps:
+```
+hisat2-build -p [THREADS] viruses.fasta viruses
+```
+More information can be found on the HISAT2 webpage: http://daehwankimlab.github.io/hisat2/howto/#building-indexes
 ## Options
 Required
 * -1 read1.fastq, --fq1 read1.fastq
@@ -81,3 +87,4 @@ python VirPy.py -t 4 -1 Test.1.fastq -2 Test.2.fastq -o outputDir -index human_r
 * featureCounts/virus_counts.txt
 	- Text file for each virus detected with viral feature quantification
 * VariantCalling directory
+
